@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    padding-right: 5rem;
+    border-bottom: 1px solid rgb(223, 221, 221);
+
+}
+.logo{
+    width: 130px;
+}
+.navbar input{
+    height: 37.6px;
+    padding-left: 1rem;
+    border-radius: 20px;
+    outline: none;
+    border: 1px #ccc solid;
+    font-size: 0.8rem;
+    width: 400px;
+    background-color: #f4f4f4;
+}
+.btn{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+}
+.navbar .btn{
+    position: relative;
+    left: -98px;
+    top: 2.5px;
+}
+.hovp:hover{
+    background-color: #ce1845;
+    color: white;
+}
+.hovw:hover{
+    background-color: white;
+    color: #ce1845;
+}
+.main{
+    background: url('./slide-01.jpg') no-repeat center;
+    background-size: cover;
+    height: calc(100vh - 115px);
+}
+.main .content{
+    color: white;
+    width: 50%;
+    margin-left: 3rem;
+    padding-top: 12rem;
+}
+.title{
+    font-size: 3rem;
+}
+.content p{
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    width: 75%;
+    font-size: 1.5rem;
+}
+.about{
+    padding: 2rem 3rem;
+    color: #333;
+    background-color:rgb(245, 245, 245);
+    transform: scale(0.9);
+    padding-bottom: 3rem;
+}
+.about .title{
+    margin: 2rem 0;
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card img{
+    width: 175px;
+    padding: 1rem 0;
+}
+.toys > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.toys{
+    text-align: center;
+    margin: 3rem 0;
+}
+.toys .title{
+    margin-bottom: 3rem;
+}
+.card{
+    border: 6px solid white;
+    box-shadow: 0px 0px 5px #ccc;
+    width: 275px;
+    height: 400px;
+    margin-left: 2rem;
+    border-radius: 8%;
+    overflow: hidden;
+    color: black;
+    padding: 1.5rem 0;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+.card:hover{
+    border: 6px solid orange;
+}
+.card .btn{
+    background-color: orange;
+    color: white;
+    position: relative;
+    top: 40px;
+    width: 150px;
+    transition: none;
+    text-transform: none;
+}
+.card div{
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+}
+.card div i{
+    color: orange;
+}
+.card .btn:hover{
+    background-color: rgb(255, 179, 14);
+}
+.stars{
+}
