@@ -1,5 +1,5 @@
 document.querySelectorAll('.c2 p')[2].style.display = 'none';
-const btn = document.querySelectorAll('.btn')[6];
+const btn = document.querySelector('.learn');
 btn.addEventListener('click', e => {
     if(btn.innerText === 'LEARN MORE'){ 
         document.querySelector('.about').style.gridTemplateColumns = '1fr';
