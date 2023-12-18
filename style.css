@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -39,6 +41,9 @@
     outline: none;
     transition: all 0.5s ease-in-out;
 }
+.main .btn, .about .btn {
+    padding: 0.75rem 2.5rem;
+}
 .navbar .btn{
     position: relative;
     left: -98px;
@@ -55,7 +60,7 @@
 .main{
     background: url('./slide-01.jpg') no-repeat center;
     background-size: cover;
-    height: calc(100vh - 115px);
+    height: 100vh;
 }
 .main .content{
     color: white;
@@ -66,6 +71,9 @@
 .title{
     font-size: 3rem;
 }
+.about .content {
+    flex: 1;
+}
 .content p{
     padding: 2rem 0;
     padding-bottom: 3rem;
@@ -73,21 +81,24 @@
     font-size: 1.5rem;
 }
 .about{
-    padding: 2rem 3rem;
+    padding: 3rem 4rem;
     color: #333;
-    background-color:rgb(245, 245, 245);
+    align-items: flex-start;
+    display: flex;
+    background-color:#e8e9ed;
     transform: scale(0.9);
 }
 .about .title{
-    margin: 2rem 0;
+    margin-top: 2rem;
 }
-.about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.about img {
+    margin-top: 2rem;
+    object-fit: contain;
+    width: 60%;
 }
 .card img{
     width: 175px;
-    padding: 1rem 0;
+    padding: 0.75rem 0;
 }
 .toys > div{
     display: grid;
@@ -101,15 +112,18 @@
     margin-bottom: 3rem;
 }
 .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 6px solid white;
     box-shadow: 0px 0px 5px #ccc;
-    width: 275px;
-    height: 400px;
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     border-radius: 8%;
     overflow: hidden;
     color: black;
     padding: 1.5rem 0;
+    transform: scale(0.95);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
     position: relative;
@@ -120,7 +134,6 @@
 .card .btn{
     background-color: orange;
     color: white;
-    position: relative;
     top: 40px;
     width: 150px;
     transition: none;
@@ -136,47 +149,4 @@
 }
 .card .btn:hover{
     background-color: rgb(255, 179, 14);
-}
-
-.contact{
-    color: #333;
-    padding: 2rem;
-    background-color:rgb(200, 200, 200);
-    transform: scale(0.9);
-}
-.contact-idk{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-}
-.content-contact{
-    background-color: rgb(160,160,160);
-    border-radius: 50px;
-    font-size: 30px;
-    width: 66%; 
-    padding: 2rem;
-}
-.content-contact div{
-    margin: 1rem;
-}
-.contact img{
-    border-radius: 80px;
-    width: 100%;
-}
-.contact p{
-    margin-bottom: 50px;
-    font-size: 50px;
-}
-.contact input, 
-.contact textarea {
-    width: 100%;
-    display: block;
-    outline: none;
-    margin: 0.5rem 0;
-}
-.contact textarea {
-    height: 70px;
-}
-.contact input[type='text']{
-    height: 30px;
 }
