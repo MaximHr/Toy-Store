@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .navbar{
     display: flex;
@@ -26,6 +29,9 @@
     font-size: 0.8rem;
     width: 400px;
     background-color: #f4f4f4;
+}
+#kid {
+    display: block;
 }
 .btn{
     text-decoration: none;
