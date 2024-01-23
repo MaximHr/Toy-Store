@@ -30,6 +30,31 @@ html {
     width: 400px;
     background-color: #f4f4f4;
 }
+.footer {
+    margin-top: 1rem;
+    background-color: rgb(255, 179, 14);
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+    text-align: center;
+    font-size: 1.25rem;
+    justify-content: space-between;
+}
+.footer p i {
+    margin-right: 1rem;
+}
+.social i:hover {
+    transform: scale(1.25);
+}
+.footer .social {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.footer svg, .footer i {
+    transform: scale(1.1);
+}
 #kid {
     display: block;
 }
@@ -118,6 +143,7 @@ html {
     margin-bottom: 3rem;
 }
 .card{
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,6 +170,7 @@ html {
     width: 150px;
     transition: none;
     text-transform: none;
+    border: 3px solid orange;
 }
 .card div{
     font-size: 1.25rem;

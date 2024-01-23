@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="icon" href="./AmekToys.png">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -16,7 +16,7 @@
     <a><img src="./AmekToys.png" alt="Our Logo" class="logo"></a>
     <div>
       <input type="text" placeholder="Плюшено мече, панда..." autocomplete="off">
-      <a class="btn hovp">Търси !</a>
+      <a class="btn hovp" href="#products">Търси !</a>
     </div>
   </div>
   <div class="main">
@@ -29,42 +29,42 @@
   <div class="toys">
     <h1 class="title">Най-продавани играчки</h1>
     <div id="products">
-      <div class="card">
+      <a  href='./toy1.html' class="card">
         <h1>Мече</h1>
         <img src="./p1.jpg" alt="me4e">
         <div class="stars">
           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
         <div>$40.00</div>
-        <a href='./toy1.html' class="btn hovp"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-      </div>
-      <div class="card">
+        <button class="btn hovp"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+      </a>
+      <a class="card" href="./toy3.html">
         <h1>Лъвче</h1>
         <img src="./p3.jpg" alt="me4e">
         <div class="stars">
           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
         <div>$18.00</div>
-        <a class="btn hovp" href="./toy3.html"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-      </div>
-      <div class="card">
+        <button class="btn hovp" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+      </a>
+      <a class="card" href="./toy2.html">
         <h1>Angry Birds</h1>
         <img src="./p2.png" alt="me4e">
         <div class="stars">
          </i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
         <div>$24.00</div>
-        <a class="btn hovp" href="./toy2.html"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-      </div>
-      <div class="card">
+        <button class="btn hovp" ><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+      </a>
+      <a class="card"  href="./toy4.html">
         <h1>Панда</h1>
         <img src="./p5.jpeg" alt="me4e">
         <div class="stars">
           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
         <div>$16.00</div>
-        <a class="btn hovp" href="./toy4.html"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-      </div>
+        <button class="btn hovp"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+      </a>
      
     </div>
   </div>
@@ -79,6 +79,11 @@
           <a class="btn hovp learn" id="learn" onclick="learnMore()">Научи повече</a>
       </div>
       <img id='kid' src="./blog_06.jpg" alt="A kid">
+    </div>
+    <div class="footer">
+      <p><i class="fa-solid fa-phone"></i>087 824 6906</p>
+      <p><i class="fa-solid fa-envelope"></i>cuddlyToys@gmail.com</p>
+      <p class="social"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i></p>
     </div>
     <script>
       function learnMore() {
